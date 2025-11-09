@@ -1,5 +1,7 @@
 ﻿
-const API_BASE = 'http://localhost:5000';
+// const API_BASE = 'http://localhost:5000';
+const API_BASE = 'https://craft-collective-api.onrender.com'; 
+
 const STORAGE_KEYS = {
   auth: 'craft-collective-auth',
   cart: 'craft-collective-cart',
@@ -1071,4 +1073,5 @@ function init() {
 }
 
 init();
+
 
