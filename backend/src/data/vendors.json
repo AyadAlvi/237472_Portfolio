@@ -1,0 +1,73 @@
+[
+  {
+    "id": "vndr-aurora",
+    "name": "Aurora Atelier",
+    "location": "Portland, OR",
+    "bio": "Hand-painted watercolor prints inspired by botanicals and the Pacific Northwest skyline.",
+    "heroImage": "/images/vendors/aurora.jpg",
+    "categories": [
+      "Watercolor",
+      "Wall Art",
+      "Nature"
+    ],
+    "rating": 4.9,
+    "shippingPolicy": "Ships in 3-5 business days. Custom framing available.",
+    "storeSlug": "aurora-atelier",
+    "social": {
+      "instagram": "https://instagram.com/auroraatelier",
+      "website": "https://aurora-atelier.example.com"
+    }
+  },
+  {
+    "id": "vndr-lumina",
+    "name": "Lumina Looms",
+    "location": "Sedona, AZ",
+    "bio": "Small batch textile studio weaving sustainable wall hangings and tapestries.",
+    "heroImage": "/images/vendors/lumina.jpg",
+    "categories": [
+      "Fiber Art",
+      "Home Decor",
+      "Boho"
+    ],
+    "rating": 4.8,
+    "shippingPolicy": "Made-to-order ships within 2 weeks.",
+    "storeSlug": "lumina-looms",
+    "social": {
+      "instagram": "https://instagram.com/luminalooms",
+      "website": "https://lumina-loom.example.com"
+    }
+  },
+  {
+    "id": "vndr-coast",
+    "name": "Coastal Clay Co",
+    "location": "Charleston, SC",
+    "bio": "Wheel-thrown ceramics celebrating coastal textures and tides.",
+    "heroImage": "/images/vendors/coastal.jpg",
+    "categories": [
+      "Ceramics",
+      "Tableware",
+      "Minimal"
+    ],
+    "rating": 5,
+    "shippingPolicy": "Ready-to-ship in 2 business days. Custom glaze requests welcome.",
+    "storeSlug": "coastal-clay",
+    "social": {
+      "instagram": "https://instagram.com/coastalclay",
+      "website": "https://coastalclay.example.com"
+    }
+  },
+  {
+    "id": "vndr-ayad-alvi-48810",
+    "name": "Ayad Alvi Studio",
+    "location": "Set your city",
+    "bio": "This vendor just joined Craft Collective and will update their story soon.",
+    "heroImage": "/images/vendors/placeholder.jpg",
+    "categories": [
+      "Custom"
+    ],
+    "rating": 0,
+    "shippingPolicy": "Ships after coordinating with the customer.",
+    "storeSlug": "ayad-alvi",
+    "social": {}
+  }
+]

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Craft Collective Marketplace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#mainContent">Skip to content</a>
+
+    <header class="site-header" role="banner">
+      <div class="logo" aria-label="Craft Collective home">
+        <span class="logo-mark" aria-hidden="true">◎</span>
+        <span>Craft Collective</span>
+      </div>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#vendors" data-nav-target="vendors" class="nav-link">Vendors</a>
+        <a href="#products" data-nav-target="products" class="nav-link">Marketplace</a>
+        <a href="#custom" data-nav-target="custom" class="nav-link">Custom Studio</a>
+        <a href="#blog" data-nav-target="blog" class="nav-link">Stories</a>
+        <button id="profileNav" class="nav-link profile-link" type="button" hidden>Profile</button>
+      </nav>
+      <div class="header-actions">
+        <button id="themeToggle" class="ghost-button" type="button" aria-pressed="false">🌙</button>
+        <button id="authTrigger" class="ghost-button" type="button">Sign In</button>
+        <button id="cartTrigger" class="pill-button" type="button" aria-haspopup="dialog">
+          Cart <span id="cartCount">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="mainContent" tabindex="-1">
+      <section class="hero" aria-labelledby="heroHeading">
+        <div>
+          <p class="eyebrow">Art &amp; Craft Marketplace</p>
+          <h1 id="heroHeading">Original pieces from independent artisans.</h1>
+          <p>
+            Browse curated collections, visit individual storefronts, and commission custom work from artists you love.
+          </p>
+          <div class="hero-actions">
+            <button id="ctaBrowse" class="pill-button" type="button">Browse Marketplace</button>
+            <button id="ctaBecomeVendor" class="ghost-button" type="button">Become a Vendor</button>
+          </div>
+        </div>
+        <div class="hero-gallery" aria-hidden="true">
+          <div class="hero-card hero-card--primary">
+            <span>Featured</span>
+            <h3>Desert Bloom Tapestry</h3>
+            <p>Lumina Looms &middot; Sedona</p>
+          </div>
+          <div class="hero-card hero-card--secondary">
+            <h3>Tide Pool Ceramics</h3>
+            <p>Coastal Clay Co &middot; Charleston</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="vendors" class="panel vendors-panel" aria-labelledby="vendorsHeading">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Multi-vendor marketplace</p>
+            <h2 id="vendorsHeading">Meet the studio owners</h2>
+          </div>
+          <div class="filters">
+            <label class="sr-only" for="vendorSearch">Search vendors</label>
+            <input type="search" id="vendorSearch" placeholder="Search by style or city" />
+          </div>
+        </div>
+        <div id="vendorGrid" class="vendor-grid" aria-live="polite"></div>
+        <div id="vendorDetail" class="vendor-detail" hidden>
+          <div class="vendor-detail__header">
+            <div>
+              <h3 id="detailName"></h3>
+              <p id="detailBio"></p>
+            </div>
+            <button id="closeVendorDetail" class="ghost-button" type="button">Close</button>
+          </div>
+          <div class="vendor-detail__meta">
+            <p><strong>Location</strong> <span id="detailLocation"></span></p>
+            <p><strong>Categories</strong> <span id="detailCategories"></span></p>
+            <p><strong>Shipping</strong> <span id="detailShipping"></span></p>
+          </div>
+          <div>
+            <h4>Featured pieces</h4>
+            <div id="detailProducts" class="product-grid compact"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="products" class="panel marketplace-panel" aria-labelledby="productsHeading">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Curated drops</p>
+            <h2 id="productsHeading">Marketplace</h2>
+          </div>
+          <div class="filters">
+            <label class="sr-only" for="productSearch">Search products</label>
+            <input type="search" id="productSearch" placeholder="Search artwork, medium, or keywords" />
+            <label class="sr-only" for="vendorFilter">Filter by vendor</label>
+            <select id="vendorFilter">
+              <option value="">All vendors</option>
+            </select>
+          </div>
+        </div>
+        <div id="productGrid" class="product-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="custom" class="panel custom-panel" aria-labelledby="customHeading">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Commissioned work</p>
+            <h2 id="customHeading">Custom studio</h2>
+          </div>
+          <p>Collaborate on personalized pieces, from color palettes to monograms.</p>
+        </div>
+        <form id="customForm" class="custom-form">
+          <div class="form-control">
+            <label for="customVendor">Select vendor</label>
+            <select id="customVendor" required></select>
+          </div>
+          <div class="form-control">
+            <label for="customProduct">Select product</label>
+            <select id="customProduct" required></select>
+          </div>
+          <div class="form-control">
+            <label for="customDetails">Describe your idea</label>
+            <textarea id="customDetails" rows="4" placeholder="Colors, size, personalization..." required></textarea>
+          </div>
+          <div class="form-control">
+            <label for="customBudget">Target budget</label>
+            <input type="number" id="customBudget" placeholder="Optional" />
+          </div>
+          <button type="submit" class="pill-button">Submit request</button>
+          <p id="customFeedback" class="form-feedback" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section id="blog" class="panel blog-panel" aria-labelledby="blogHeading">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Process journal</p>
+            <h2 id="blogHeading">Stories &amp; tutorials</h2>
+          </div>
+          <button class="ghost-button" id="refreshBlog" type="button">Refresh</button>
+        </div>
+        <div id="blogGrid" class="blog-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="dashboard" class="panel dashboard-panel" aria-labelledby="dashboardHeading" hidden>
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Account space</p>
+            <h2 id="dashboardHeading">Profile &amp; dashboard</h2>
+          </div>
+          <div class="dashboard-toolbar">
+            <button id="dashboardBack" class="ghost-button" type="button">Back to marketplace</button>
+          </div>
+        </div>
+        <div id="dashboardContent" class="dashboard-content" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <aside id="cartDrawer" class="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle" aria-hidden="true">
+      <div class="cart-header">
+        <h3 id="cartTitle">Your cart</h3>
+        <button id="closeCart" aria-label="Close cart" type="button">&times;</button>
+      </div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-footer">
+        <div aria-live="polite">
+          <p>Subtotal <span id="cartSubtotal">$0.00</span></p>
+          <p>Service fee <span id="cartFee">$0.00</span></p>
+          <p class="cart-total">Total <span id="cartTotal">$0.00</span></p>
+        </div>
+        <button id="checkoutBtn" class="pill-button" type="button">Secure checkout</button>
+        <p id="cartFeedback" class="form-feedback" role="status" aria-live="polite"></p>
+      </div>
+    </aside>
+
+    <div id="authModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+      <div class="modal-panel">
+        <button class="modal-close" id="closeAuth" aria-label="Close auth modal" type="button">&times;</button>
+        <h2 id="authTitle">Welcome back</h2>
+        <div class="tabs" role="tablist">
+          <button data-tab="login" class="tab active" role="tab" aria-selected="true" aria-controls="loginForm">Sign in</button>
+          <button data-tab="register" class="tab" role="tab" aria-selected="false" aria-controls="registerForm">Create account</button>
+        </div>
+        <form id="loginForm" class="auth-form active" aria-labelledby="authTitle">
+          <input type="email" id="loginEmail" placeholder="Email" required />
+          <input type="password" id="loginPassword" placeholder="Password" required />
+          <button type="submit" class="pill-button">Sign in</button>
+          <p class="form-feedback" id="loginFeedback" role="status" aria-live="polite"></p>
+        </form>
+        <form id="registerForm" class="auth-form" aria-labelledby="authTitle">
+          <input type="text" id="registerName" placeholder="Full name" required />
+          <input type="email" id="registerEmail" placeholder="Email" required />
+          <input type="password" id="registerPassword" placeholder="Password (8+ chars)" required />
+          <select id="registerRole">
+            <option value="customer">Art Lover</option>
+            <option value="vendor">Vendor</option>
+          </select>
+          <input type="text" id="registerVendorId" placeholder="Vendor ID (if registering as vendor)" />
+          <button type="submit" class="pill-button">Create account</button>
+          <p class="form-feedback" id="registerFeedback" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+
+    <template id="productCardTemplate">
+      <article class="product-card">
+        <div class="product-media" aria-hidden="true"></div>
+        <div class="product-body">
+          <h3></h3>
+          <p class="product-vendor"></p>
+          <p class="product-description"></p>
+          <div class="product-customizations"></div>
+          <div class="product-footer">
+            <span class="price-tag"></span>
+            <button class="pill-button add-to-cart" type="button">Add to cart</button>
+          </div>
+        </div>
+      </article>
+    </template>
+
+    <div id="liveRegion" class="sr-only" aria-live="assertive"></div>
+
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>

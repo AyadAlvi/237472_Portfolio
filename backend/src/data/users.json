@@ -1,0 +1,52 @@
+[
+  {
+    "id": "usr-demo-vendor",
+    "name": "Demo Vendor",
+    "email": "vendor@craftcollective.com",
+    "role": "vendor",
+    "passwordHash": "$2b$10$D6GYGhsCIDiMEGe35bX..eLIZhAhXo/PUtOrCFjOEjPh8Z/su2Y6y",
+    "vendorId": "vndr-aurora",
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "87e12f15-f7b8-4e42-836d-66a4f1c0f7d5",
+    "name": "Ayad Alvi",
+    "email": "ayadalvi1125@gmail.com",
+    "role": "customer",
+    "vendorId": null,
+    "passwordHash": "$2b$10$brV4KhYw.U9hii7LHpkdmeAhC3hhcA32IT6N9ccngs9mAAnpmVcE2",
+    "createdAt": "2025-11-08T22:41:01.912Z",
+    "updatedAt": "2025-11-08T22:41:01.912Z"
+  },
+  {
+    "id": "b18b19e8-d5f5-453f-b013-498db8110a7b",
+    "name": "Ayad Alvi",
+    "email": "z2m08096@gmail.com",
+    "role": "vendor",
+    "vendorId": "vndr-lumina",
+    "passwordHash": "$2b$10$M.c6RUWRLKkq1H11lt40HepN6JJvhWrY1uOuToLQkKIDZDtWZBMLW",
+    "createdAt": "2025-11-08T22:41:47.241Z",
+    "updatedAt": "2025-11-08T22:41:47.241Z"
+  },
+  {
+    "id": "8d7c5731-63fb-4ed8-9e6d-d3b519cab270",
+    "name": "Ayad Alvi",
+    "email": "z2m090@gmail.com",
+    "role": "customer",
+    "vendorId": null,
+    "passwordHash": "$2b$10$.dLyY/mMIKhN98vyFE4Vmu0Pxma2mChomOVgL7u755QEAAyXPdMn2",
+    "createdAt": "2025-11-09T00:09:52.517Z",
+    "updatedAt": "2025-11-09T00:09:52.517Z"
+  },
+  {
+    "id": "acd145f0-6381-479a-8988-79b4627125dd",
+    "name": "Ayad Alvi",
+    "email": "z2m@gmail.com",
+    "role": "vendor",
+    "vendorId": "vndr-ayad-alvi-48810",
+    "passwordHash": "$2b$10$0k/ZarF7w3Qjw8E0XBS6Re9jS.4VzCnRd4u705L64BQ0WfxW/hLkG",
+    "createdAt": "2025-11-09T00:19:30.370Z",
+    "updatedAt": "2025-11-09T00:19:30.370Z"
+  }
+]

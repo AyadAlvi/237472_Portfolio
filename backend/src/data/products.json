@@ -1,0 +1,140 @@
+[
+  {
+    "id": "prd-watercolor-aurora-01",
+    "vendorId": "vndr-aurora",
+    "name": "Midnight Ferns",
+    "price": 65,
+    "isActive": true,
+    "images": [
+      "https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+    ],
+    "inventory": 12,
+    "tags": [
+      "botanical",
+      "limited"
+    ],
+    "description": "Original watercolor print on cold press cotton paper.",
+    "customizations": [
+      {
+        "label": "Paper Size",
+        "type": "select",
+        "options": [
+          "8x10 in",
+          "11x14 in",
+          "16x20 in"
+        ],
+        "key": "paperSize"
+      },
+      {
+        "label": "Framing",
+        "type": "select",
+        "options": [
+          "Unframed",
+          "Birch Frame",
+          "Black Frame"
+        ],
+        "key": "frame"
+      },
+      {
+        "label": "Personalized Note",
+        "type": "text",
+        "placeholder": "Add a short dedication",
+        "key": "note"
+      }
+    ],
+    "createdAt": "2024-01-01T00:00:00.000Z",
+    "updatedAt": "2024-01-01T00:00:00.000Z"
+  },
+  {
+    "id": "prd-tapestry-lumina-02",
+    "vendorId": "vndr-lumina",
+    "name": "Desert Bloom Tapestry",
+    "price": 220,
+    "isActive": true,
+    "images": [
+      "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429"
+    ],
+    "inventory": 4,
+    "tags": [
+      "woven",
+      "organic"
+    ],
+    "description": "Handwoven tapestry using naturally dyed cotton and hemp.",
+    "customizations": [
+      {
+        "label": "Width",
+        "type": "select",
+        "options": [
+          "18 in",
+          "24 in",
+          "30 in"
+        ],
+        "key": "width"
+      },
+      {
+        "label": "Accent Color",
+        "type": "select",
+        "options": [
+          "Terracotta",
+          "Sage",
+          "Indigo"
+        ],
+        "key": "accent"
+      }
+    ],
+    "createdAt": "2024-01-05T00:00:00.000Z",
+    "updatedAt": "2024-01-05T00:00:00.000Z"
+  },
+  {
+    "id": "prd-ceramic-coast-03",
+    "vendorId": "vndr-coast",
+    "name": "Tide Pool Serving Set",
+    "price": 180,
+    "isActive": true,
+    "images": [
+      "https://images.unsplash.com/photo-1460242469071-a6d400c47aaf"
+    ],
+    "inventory": 7,
+    "tags": [
+      "ceramic",
+      "stoneware",
+      "hosting"
+    ],
+    "description": "Five-piece wheel-thrown stoneware set finished with crystalline glaze.",
+    "customizations": [
+      {
+        "label": "Glaze Finish",
+        "type": "select",
+        "options": [
+          "Sea Glass",
+          "Deep Tide",
+          "Cloud Foam"
+        ],
+        "key": "glaze"
+      },
+      {
+        "label": "Monogram",
+        "type": "text",
+        "placeholder": "Enter initials",
+        "key": "monogram"
+      }
+    ],
+    "createdAt": "2024-02-01T00:00:00.000Z",
+    "updatedAt": "2024-02-01T00:00:00.000Z"
+  },
+  {
+    "id": "prd-af134e94-d0b0-4dc6-a465-a2368c21833f",
+    "vendorId": "vndr-ayad-alvi-48810",
+    "name": "asdf",
+    "description": "sdfg",
+    "price": 23,
+    "inventory": 0,
+    "images": [],
+    "tags": [],
+    "customizations": [],
+    "isActive": true,
+    "createdAt": "2025-11-09T00:19:47.534Z",
+    "updatedAt": "2025-11-09T00:19:55.295Z"
+  }
+]

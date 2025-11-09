@@ -1,0 +1,20 @@
+[
+  {
+    "id": "post-aurora-watercolor-basics",
+    "vendorId": "vndr-aurora",
+    "title": "Layering Watercolor for Moody Botanicals",
+    "coverImage": "/images/blog/watercolor.jpg",
+    "excerpt": "Aurora shares glazing techniques for depth and glow.",
+    "content": "<p>Watercolor thrives on intentional restraint. Start with light washes... More content here.</p>",
+    "publishedAt": "2025-10-03"
+  },
+  {
+    "id": "post-lumina-studio-tour",
+    "vendorId": "vndr-lumina",
+    "title": "Inside the Lumina Looms Dye Kitchen",
+    "coverImage": "/images/blog/loom.jpg",
+    "excerpt": "Natural pigments, desert florals, and weaving rhythms.",
+    "content": "<p>Working with desert botanicals means letting the landscape guide the palette...</p>",
+    "publishedAt": "2025-09-18"
+  }
+]
